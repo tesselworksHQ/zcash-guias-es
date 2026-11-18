@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1f2a44"/></marker>
+  </defs>
+  <rect width="1200" height="700" fill="#ffffff"/>
+  <text x="600" y="46" text-anchor="middle" font-size="28" font-weight="700" fill="#1f2a44">Cómo proponer un ZIP: de la idea al merge</text>
+  <text x="600" y="76" text-anchor="middle" font-size="16" fill="#555">Repositorio: github.com/zcash/zips · Foro: forum.zcashcommunity.com · Editores: zips@z.cash</text>
+
+  <g font-size="18" font-weight="700" fill="#1f2a44">
+    <!-- row 1 -->
+    <rect x="40" y="120" width="250" height="140" rx="14" fill="#fff4d6" stroke="#d9a400" stroke-width="2.5"/>
+    <text x="60" y="152">0 · ¿Necesita ZIP?</text>
+    <rect x="335" y="120" width="250" height="140" rx="14" fill="#fff4d6" stroke="#d9a400" stroke-width="2.5"/>
+    <text x="355" y="152">1 · Investiga</text>
+    <rect x="630" y="120" width="250" height="140" rx="14" fill="#e3f0ff" stroke="#2d6cdf" stroke-width="2.5"/>
+    <text x="650" y="152">2 · Foro</text>
+    <rect x="925" y="120" width="250" height="140" rx="14" fill="#e3f0ff" stroke="#2d6cdf" stroke-width="2.5"/>
+    <text x="945" y="152">3 · Borrador</text>
+    <!-- row 2 -->
+    <rect x="925" y="350" width="250" height="140" rx="14" fill="#e3f0ff" stroke="#2d6cdf" stroke-width="2.5"/>
+    <text x="945" y="382">4 · Secciones</text>
+    <rect x="630" y="350" width="250" height="140" rx="14" fill="#efe6ff" stroke="#7a4fd6" stroke-width="2.5"/>
+    <text x="650" y="382">5 · make</text>
+    <rect x="335" y="350" width="250" height="140" rx="14" fill="#efe6ff" stroke="#7a4fd6" stroke-width="2.5"/>
+    <text x="355" y="382">6 · Pull request</text>
+    <rect x="40" y="350" width="250" height="140" rx="14" fill="#efe6ff" stroke="#7a4fd6" stroke-width="2.5"/>
+    <text x="60" y="382">7 · Revisión</text>
+    <!-- final -->
+    <rect x="40" y="560" width="1135" height="100" rx="14" fill="#e6f7ec" stroke="#1f9d55" stroke-width="2.5"/>
+    <text x="60" y="594">8 · Número + merge → publicado como Draft en zips.z.cash</text>
+  </g>
+
+  <g font-size="14.5" fill="#333">
+    <text x="60" y="180">Parche pequeño de un solo</text>
+    <text x="60" y="200">programa → issue/PR en ese</text>
+    <text x="60" y="220">proyecto. Protocolo, interop.</text>
+    <text x="60" y="240">o proceso → sí, un ZIP.</text>
+
+    <text x="355" y="180">Busca en zips.z.cash, en los</text>
+    <text x="355" y="200">draft-* del repo, en issues y</text>
+    <text x="355" y="220">en el foro: ¿ya se propuso o</text>
+    <text x="355" y="240">se descartó antes?</text>
+
+    <text x="650" y="180">Publica la idea y luego el</text>
+    <text x="650" y="200">borrador. Recoge opiniones y</text>
+    <text x="650" y="220">documenta las objeciones.</text>
+    <text x="650" y="240">Una idea por ZIP.</text>
+
+    <text x="945" y="180">Plantilla zip-guide-markdown.md</text>
+    <text x="945" y="200">o zip-guide.rst. Archivo</text>
+    <text x="945" y="220">draft-alias-tema · Status: Draft</text>
+    <text x="945" y="240">· sin número · licencia válida.</text>
+
+    <text x="945" y="410">Resumen (~200 palabras),</text>
+    <text x="945" y="430">motivación, privacidad,</text>
+    <text x="945" y="450">requisitos, especificación,</text>
+    <text x="945" y="470">justificación (+ despliegue).</text>
+
+    <text x="650" y="410">Clona zcash/zips, ejecuta</text>
+    <text x="650" y="430">make y revisa</text>
+    <text x="650" y="450">rendered/draft-*.html.</text>
+    <text x="650" y="470">No subas el HTML generado.</text>
+
+    <text x="355" y="410">Abre el PR en zcash/zips.</text>
+    <text x="355" y="430">Anúncialo en el foro y en</text>
+    <text x="355" y="450">#zips (Discord) con título</text>
+    <text x="355" y="470">y resumen.</text>
+
+    <text x="60" y="410">Revisión de contenido (varios</text>
+    <text x="60" y="430">Editores) y luego de formato</text>
+    <text x="60" y="450">(dos Editores). Puedes aceptar</text>
+    <text x="60" y="470">o rechazar sugerencias.</text>
+
+    <text x="60" y="624">Después: Proposed (consenso aproximado; los ZIPs de Consenso necesitan sección de despliegue) → Implemented / Active → Final.</text>
+    <text x="60" y="645">Un año sin avances → Rejected (puede retomarse).</text>
+  </g>
+
+  <g stroke="#1f2a44" stroke-width="2.5" fill="none" marker-end="url(#a)">
+    <path d="M290,190 L331,190"/>
+    <path d="M585,190 L626,190"/>
+    <path d="M880,190 L921,190"/>
+    <path d="M1050,260 L1050,346"/>
+    <path d="M925,420 L884,420"/>
+    <path d="M630,420 L589,420"/>
+    <path d="M335,420 L294,420"/>
+    <path d="M165,490 L165,556"/>
+  </g>
+  <text x="1170" y="688" text-anchor="end" font-size="12" fill="#999">Fuente: ZIP 0 y README de github.com/zcash/zips</text>
+</svg>
