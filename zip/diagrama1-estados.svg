@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2a44"/></marker>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8a8f99"/></marker>
+  </defs>
+  <rect width="1200" height="640" fill="#ffffff"/>
+  <text x="600" y="44" text-anchor="middle" font-size="28" font-weight="700" fill="#1f2a44">Ciclo de vida de un ZIP (según ZIP 0)</text>
+  <text x="600" y="74" text-anchor="middle" font-size="16" fill="#555">Los Owners pueden pasar entre Draft y Withdrawn; cualquier otro cambio de estado requiere consenso de los Editores</text>
+
+  <!-- main row -->
+  <g font-size="19" font-weight="600" text-anchor="middle">
+    <rect x="30" y="230" width="150" height="70" rx="12" fill="#eef1f6" stroke="#8a8f99" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="105" y="262" fill="#1f2a44">Reserved</text>
+    <text x="105" y="285" font-size="13" font-weight="400" fill="#555">solo "stub" (opcional)</text>
+
+    <rect x="240" y="230" width="150" height="70" rx="12" fill="#fff4d6" stroke="#d9a400" stroke-width="2.5"/>
+    <text x="315" y="262" fill="#1f2a44">Draft</text>
+    <text x="315" y="285" font-size="13" font-weight="400" fill="#555">todo ZIP nuevo</text>
+
+    <rect x="470" y="230" width="160" height="70" rx="12" fill="#e3f0ff" stroke="#2d6cdf" stroke-width="2.5"/>
+    <text x="550" y="262" fill="#1f2a44">Proposed</text>
+    <text x="550" y="285" font-size="13" font-weight="400" fill="#555">consenso aproximado</text>
+
+    <rect x="750" y="150" width="180" height="70" rx="12" fill="#e6f7ec" stroke="#1f9d55" stroke-width="2.5"/>
+    <text x="840" y="182" fill="#1f2a44">Implemented</text>
+    <text x="840" y="205" font-size="13" font-weight="400" fill="#555">Consensus / Standards</text>
+
+    <rect x="1010" y="150" width="160" height="70" rx="12" fill="#c9efd6" stroke="#1f9d55" stroke-width="2.5"/>
+    <text x="1090" y="182" fill="#1f2a44">Final</text>
+    <text x="1090" y="205" font-size="13" font-weight="400" fill="#555">activado en la red</text>
+
+    <rect x="750" y="320" width="180" height="70" rx="12" fill="#e6f7ec" stroke="#1f9d55" stroke-width="2.5"/>
+    <text x="840" y="352" fill="#1f2a44">Active</text>
+    <text x="840" y="375" font-size="13" font-weight="400" fill="#555">Process / Informational</text>
+
+    <rect x="240" y="470" width="150" height="62" rx="12" fill="#f3f3f3" stroke="#8a8f99" stroke-width="2"/>
+    <text x="315" y="500" fill="#444">Withdrawn</text>
+    <text x="315" y="520" font-size="13" font-weight="400" fill="#666">retirado por Owners</text>
+
+    <rect x="470" y="470" width="160" height="62" rx="12" fill="#f3f3f3" stroke="#8a8f99" stroke-width="2"/>
+    <text x="550" y="500" fill="#444">Rejected</text>
+    <text x="550" y="520" font-size="13" font-weight="400" fill="#666">1 año sin avances</text>
+
+    <rect x="990" y="470" width="170" height="62" rx="12" fill="#f3f3f3" stroke="#8a8f99" stroke-width="2"/>
+    <text x="1075" y="500" fill="#444">Obsolete</text>
+    <text x="1075" y="520" font-size="13" font-weight="400" fill="#666">ya no es relevante</text>
+  </g>
+
+  <!-- forward arrows -->
+  <g stroke="#1f2a44" stroke-width="2.5" fill="none" marker-end="url(#a)">
+    <path d="M180,265 L236,265"/>
+    <path d="M390,265 L466,265"/>
+    <path d="M630,250 C680,220 700,190 746,186"/>
+    <path d="M930,185 L1006,185"/>
+    <path d="M630,282 C680,320 700,350 746,354"/>
+  </g>
+  <g font-size="13" fill="#1f2a44">
+    <text x="396" y="250">completo y</text>
+    <text x="396" y="292">consenso</text>
+    <text x="600" y="128">implementación de referencia</text>
+    <text x="600" y="144">fusionada en un nodo</text>
+    <text x="970" y="120" text-anchor="middle">se activa en una</text>
+    <text x="970" y="136" text-anchor="middle">actualización de red</text>
+    <text x="752" y="412">≥1 mes abierto, ≥1 semana</text>
+    <text x="752" y="428">en Proposed, sin objeciones</text>
+  </g>
+
+  <!-- exit arrows (grey) -->
+  <g stroke="#8a8f99" stroke-width="2" fill="none" stroke-dasharray="7 5">
+    <path d="M300,300 L300,466" marker-end="url(#g)"/>
+    <path d="M330,466 L330,304" marker-end="url(#g)"/>
+    <path d="M370,300 C420,380 470,420 520,466" marker-end="url(#g)"/>
+    <path d="M550,300 L550,466" marker-end="url(#g)"/>
+    <path d="M600,466 C620,420 615,350 600,304" marker-end="url(#g)"/>
+    <path d="M1110,220 L1110,466" marker-end="url(#g)"/>
+    <path d="M930,365 C970,400 995,440 1015,466" marker-end="url(#g)"/>
+    <path d="M900,220 C950,300 1000,400 1050,466" marker-end="url(#g)"/>
+  </g>
+  <g font-size="12.5" fill="#666">
+    <text x="196" y="400">retirar</text>
+    <text x="338" y="400">volver</text>
+    <text x="612" y="430">retomar</text>
+  </g>
+
+  <text x="600" y="600" text-anchor="middle" font-size="14" fill="#555">Released = Proposed, Active, Implemented o Final. Un ZIP con implicaciones de seguridad o privacidad necesita revisión independiente antes de ser Released.</text>
+  <text x="1170" y="628" text-anchor="end" font-size="12" fill="#999">Fuente: zips.z.cash/zip-0000</text>
+</svg>
